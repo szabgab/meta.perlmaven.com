@@ -1,0 +1,596 @@
+@import url(//fonts.googleapis.com/css?subset=latin,cyrillic&family=Source+Code+Pro|Roboto:400,700,400italic|Roboto+Slab:700);
+
+body {
+  font-family: 'Roboto',sans-serif;
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  font-size: 16px;
+}
+
+pre {
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.4;
+  margin: 1.4;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+
+#error {
+   color: #F00;
+}
+
+/*
+on mobile phones the fixed position right side was displayed on top of the text while it should have disappeard)
+So for now we enable the fixed position only above 800px
+
+On mid-sized screens (e.g. notebook) we cannot see the lower ad. Disabling for now.
+*/
+/*
+@media (min-width: 800px) {
+  #right-side {
+    position:fixed;
+  }
+}
+*/
+.sponsor {
+  /* text-align:center */
+  margin: 20px;
+  background-color: #DDDDDD;
+  padding: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.abstract {
+  margin: 20px;
+  background-color: #EEEEEE;
+  padding: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#newsletter-right-form {
+  margin: 20px;
+  background-color: #DDEEFF;
+  padding: 10px;
+          border-radius: 15px;
+     -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+#promotion-right {
+  margin: 20px;
+  background-color: #F2BD49;
+  padding: 10px;
+          border-radius: 15px;
+     -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+#search-on-right {
+  text-align: center;
+}
+
+#social-share {
+  margin: 20px;
+  padding: 10px;
+}
+
+.inline_code {
+  white-space: nowrap;
+  /* background: rgba(0, 0, 0, 0.05); */
+  background-color: rgba(255, 255, 204 , 0.45);
+  box-shadow: 0 1px 0 #ffffff,0 1px 0px rgba(0, 0, 0, 0.08) inset;
+  padding: 3px 6px;
+  border-radius: 2px;
+  direction: ltr;
+  unicode-bidi:bidi-override;
+}
+
+/* Credits section start */
+#creators {
+/*  background-color: #DDDDDD; */
+  text-align: left;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 500px;
+}
+#creators img {
+	width: 130px;
+	height: 130px;
+    float: left;
+    margin-right: 5px;    
+}   
+
+#translator {
+}
+#author {
+   	position: absolute;
+/*   float: right; */
+    top: 0px;
+	left: 300px;
+}
+.author_text {
+}
+/* Credits section end */
+
+#sites {
+	margin-top: 30px;
+}
+#sites ul {
+	margin-left: 0px;
+}
+#sites li {
+	list-style-type: none;
+}
+
+#translators {
+  position: relative;
+}
+#translators ul {
+	list-style: none;
+}
+#translators li {
+    display: inline-block;
+	width: 200px;
+	margin-top: 20px;
+}
+#translators img {
+	width: 130px;
+	height: 130px;
+}
+
+#top-poster {
+	background-color: orange;
+	padding: 10px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    display: none;
+    clear: both;
+}
+#after-abstract {
+	background-color: orange;
+	padding: 10px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    display: none;
+    clear: both;
+}
+#after-content {
+	background-color: orange;
+	padding: 10px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+    display: none;
+    clear: both;
+}
+
+
+
+.prettyprint {
+    direction: ltr;
+	text-align: left;
+}
+
+.prettyprint li.L0, li.L1, li.L2, li.L3, li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: decimal !important
+}
+
+#indexes li {
+    list-style: none;
+    display: inline;
+}
+#indexes ul li button {
+    margin-bottom: 2px;
+}
+#keyword-list li {
+   margin-bottom: 10px;
+}
+#keyword-list li li {
+   margin-bottom: 1px;
+}
+#search_box {
+	margin-top:6px;
+	height:27px;
+}
+#atom-icon {
+	vertical-align: middle;
+	border: 0;
+}
+
+#promo {
+  background-color: #DDDDDD;
+  padding: 10px;
+          border-radius: 15px;
+     -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.perlweekly {
+ background-color: #004065;
+ color: #FFF;
+         border-radius: 15px;
+    -moz-border-radius: 15px;
+ -webkit-border-radius: 15px;
+ padding: 10px;
+ text-align: center;
+ margin: 20px;
+}
+
+.perlweekly_title {
+ font-size: 28px;
+ padding: 5px;
+}
+.perlweekly_free {
+ padding: 5px;
+ font-size: 16px;
+}
+.perlweekly a {
+ color: #FFF;
+ font-size: 22px;
+ text-decoration: none;
+}
+.perlweekly:hover {
+ background-color: #003055;
+}
+
+.about {
+  height:  140px;
+}
+.about img {
+  margin: 10px;
+  float: right;
+}
+
+#related_all {
+    margin-top: 100px;
+    padding: 5px;
+    border: dotted 1px;
+    margin-bottom: 20px;
+}
+
+#related {
+    margin-bottom: 20px;
+}
+
+#related ul {
+	margin-left: 0px;
+}
+#related li {
+	list-style-type: none;
+    margin-top: 5px;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+  position: static !important;
+}
+#video_1 {
+  width: 100%    !important;
+  height: auto   !important;
+}
+#download {
+  margin-top: 20px;
+}
+
+#register-message {
+   color: red;
+}
+
+#consultants .person {
+   min-height: 200px;
+}
+#consultants .picture {
+   float: left;
+   width: 130px;
+   /* background-color: green; */
+}
+#consultants .details {
+   /* background-color: red; */
+   float: left;
+   text-align: left;
+}
+
+#consultants .details ul {
+   margin: 0;
+   list-style-type: none;
+}
+
+#consultants .details li {
+   margin-top: 3px;
+   margin-left: 10px;
+}
+
+#consultants .text {
+   padding-top: 20px;
+   padding-left: 10px;
+   clear: both;
+   /* background-color: blue; */
+}
+
+#archive {
+  padding-bottom: 40px;
+}
+#archive .pro {
+  width: 30px;
+}
+#archive .interview {
+  width: 65px;
+}
+#archive .screencast {
+  width: 80px;
+}
+#archive .title {
+/*  width: 600px; */
+}
+
+#archive .date {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 80px;
+}
+
+.adsense-wide {
+  text-align: center;
+}
+
+#translations td {
+   padding-right: 20px;
+}
+
+
+#code-explain-form textarea {
+  width: 600px;
+}
+
+#code-explain #error {
+  display: none;
+}
+
+#code-explain #result {
+  display: none;
+}
+
+.spoiler {
+   padding: 5px;
+}
+.spoiler_hidden {
+  background-color: #000;
+  color: #FFF;
+}
+.spoiler_spoiled {
+  color: #000;
+  background-color: #EEEEEE;
+}
+
+.category_img {
+   margin-top: 20px;
+}
+.category_img img {
+   max-width: 150px;
+}
+
+.featured_jobs {
+  margin: 20px;
+  background-color: #FFF;
+  padding: 10px;
+          border-radius: 15px;
+     -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+
+ border: 5px solid #FF4500;
+ display: none;
+}
+
+.testimonial {
+   width: 400px;
+   padding: 10px;
+   border: 1px solid;
+}
+
+.testimonial .person {
+   background-color: #EEE;
+}
+
+#job-apply {
+  margin-top: 20px;
+}
+#job-location {
+  margin-top: 20px;
+}
+
+#lower_right {
+ margin-top: 200px;
+}
+#need-email {
+ display: none;
+}
+
+#term {
+  color: red;
+}
+
+#series {
+   margin-top: 20px;
+}
+
+#series > ol {
+  list-style: inside;
+}
+#series > ol {
+  padding-left: 0px;
+}
+
+#series > ol > li > ol {
+  padding-left: 20px;
+}
+
+#series > ol > li > ol > li {
+  margin-top: 10px;
+}
+
+.current {
+   font-weight: bold;
+}
+.prev a {
+  color: #FFF;
+}
+.next a {
+  color: #FFF;
+  float: right;
+}
+.prev-next .next {
+   float: right;
+   margin-left: 20px;
+}
+
+.buy-button a {
+  color: #FFF;
+}
+
+.author-rightbox {
+   margin-bottom: 5px;
+   text-align: left;
+}
+.author-rightbox img {
+   float: left;
+   margin-right: 5px;
+}
+
+.rightbox {
+   margin-bottom: 5px;
+   text-align: center;
+}
+
+.even {
+  background-color: #DDD;
+}
+.odd {
+  background-color: #FFF;
+}
+
+#show_autocomplete {
+    display: none;
+}
+
+#show_content {
+	display: block;
+}
+
+
+#transcript {
+}
+.transcript-talk {
+}
+.transcript-timestamp {
+   background-color: #EEE;
+}
+.transcript-speaker-unknown {
+   background-color: red;
+}
+.transcript-speaker-host1 {
+   background-color: #90C3D4;
+}
+.transcript-speaker-guest1 {
+   background-color: #90D4A9;
+}
+.transcript-speaker-guest2 {
+   background-color: #00D4A9;
+}
+.transcript-text {
+}
+
+.podcast-promotion {
+   background-color: orange;
+}
+
+@media (min-width: 1600px) {
+   .youtube {
+      width: 1023px;
+      height: 576px;
+   }
+}
+@media (min-width: 1000px) and (max-width: 1599px) {
+   .youtube {
+      width: 640px;
+      height: 360px;
+   }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+   .youtube {
+      width: 560px;
+      height: 315px;
+   }
+}
+
+#abstract_img {
+   max-width: 600px;
+}
+
+img.thumbnail_img {
+   max-width: 80px;
+}
+
+audio {
+   width: 100%;
+}
+
+@media (max-width: 1200px) {
+    #left-column {
+        display: none;
+    }
+}
+
+.bottom-video {
+   margin-top: 120px;
+}
+
+/* Change the NBootstrap Navigation bar to collapse to the hamburger earlier */
+@media (max-width: 1300px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
